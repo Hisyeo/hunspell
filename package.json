@@ -14,10 +14,8 @@
   },
   "author": "Jake Russo",
   "license": "GPL-3.0-or-later",
-  "dependencies": {
-    "zx": "^8.5.0"
-  },
   "devDependencies": {
+    "zx": "^8.5.0",
     "run-script-os": "^1.1.6"
   }
 }
