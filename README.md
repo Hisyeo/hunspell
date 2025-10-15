@@ -2,6 +2,12 @@
 
 For use in hunspell directly or in programs that support hunspell dictionaries.
 
+## Requirements
+
+- node/npm
+- wget
+- hunspell
+
 ## Install
 
 ```shell
