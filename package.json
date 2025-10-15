@@ -4,13 +4,20 @@
   "description": "Hîsyêô StarDict Files",
   "main": "index.js",
   "scripts": {
-    "preinstall": "wget --timestamping https://hisyeo.github.io/words.json",
-    "install": "zx convert.mjs",
+    "preinstall": "run-script-os",
+    "preinstall:windows": "powershell wget https://hisyeo.github.io/words.json",
+    "preinstall:nix": "wget --timestamping https://hisyeo.github.io/words.json",
+    "install": "run-script-os",
+    "install:windows": "zx convert.windows.mjs",
+    "install:nix": "zx convert.linux.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jake Russo",
   "license": "GPL-3.0-or-later",
   "dependencies": {
     "zx": "^8.5.0"
+  },
+  "devDependencies": {
+    "run-script-os": "^1.1.6"
   }
 }
