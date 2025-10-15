@@ -6,7 +6,7 @@ For use in hunspell directly or in programs that support hunspell dictionaries.
 
 - node/npm
 - wget
-- hunspell
+- [hunspell](https://hunspell.github.io)
 
 ## Install
 
